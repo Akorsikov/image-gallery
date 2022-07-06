@@ -1,0 +1,293 @@
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./assets/fonts/Ubuntu-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./assets/fonts/Inter-Regular.ttf");
+}
+  
+* {
+  box-sizing: border-box;
+}
+  
+html {  
+  scroll-behavior: smooth;
+}
+  
+body {
+  font: 1.5em "Ubuntu", sans-serif;
+}
+  
+.header,
+.main,
+.footer {
+  max-width: 1440px;
+  min-width: 768px;
+  margin: 0 auto;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  background-color: #000000;
+}
+
+.logo-container {
+  height: 80%;
+  padding-left: 10px;
+}
+.logo {
+  height: 100%;
+  width: auto;
+}
+
+.search {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3%;
+  width: 70%;
+  padding-right: 3%;
+}
+
+.search-field {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  background-color: #ffffff;
+  border: 5px solid white;
+  border-radius: 30px;
+}
+
+.search-input{
+  width: 80%;
+  height: 50px;
+  padding-left: 3%;
+  border: none;
+  font-family: 'Inter';
+  font-size: 24px;
+  background: none; 
+}
+
+.search-input:focus {
+  outline: none;
+}
+
+#search::-webkit-input-placeholder {
+  color: #909090;
+}
+
+#search::-webkit-search-decoration,
+#search::-webkit-search-cancel-button,
+#search::-webkit-search-results-button,
+#search::-webkit-search-results-decoration {
+   display: none; 
+}
+
+#check-box {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.checkbox-label {
+  display: inline-block;
+  font-size: 12px;
+  width: 65px;
+}
+
+#check-box:hover {
+  cursor: pointer;
+}
+
+.checkbox-label:hover {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.search-clear {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;  
+  background-color: #ffffff;  
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-it {
+  background-image: url(./assets/logo/search-glass.png);
+}
+
+.clear-it {
+  background-image: url(./assets/logo/clear.jfif);
+}
+
+.btns-pages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.btn-page {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 80%;  
+  transition: 0.4s;
+}
+
+.prev-page {
+  border-radius: 50% 0 0 50%;
+  background-image: url('./assets/logo/chevron-left.svg');  
+}
+
+.next-page {
+  border-radius: 0 50% 50% 0;
+  background-image: url('./assets/logo/chevron-right.svg');  
+}
+
+.prev-page,
+.next-page {
+  filter: opacity(0.5);
+  transition: 0.4s;
+}
+
+.prev-page.active,
+.next-page.active {
+  filter: opacity(1);
+  transition: 0.4s;
+}
+
+.prev-page.active:hover {  
+  background-image: url('./assets/logo/chevron-double-left.svg');
+  cursor: pointer;  
+  transition: 0.4s;  
+}
+
+.next-page.active:hover {  
+  background-image: url('./assets/logo/chevron-double-right.svg');
+  cursor: pointer;  
+  transition: 0.4s;  
+}
+
+.prev-page.active:active {
+  filter: invert();
+}
+
+.next-page.active:active {
+  filter: invert();
+}
+
+.search-button:hover {
+  color: #222222;  
+  background-color: #909090;
+  transition: 0.4s;
+}
+
+.api-class {
+  position: sticky;
+  top: 90px;
+  width: 100%;
+  height: 20px;
+  font-size: 16px;  
+  background-color: #555555;
+  padding-left: 10%;
+}
+
+.api-class a {
+  color: #d4d4d4;
+  text-decoration:none;
+  transition: 0.4s;
+}
+
+.api-class a:hover {
+  color: #ffffff;
+  transition: 0.4s;
+}
+
+.gallery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px; 
+  background-color: #4f5c87;
+}
+
+.item-gallery {
+  width: 400px;
+  height: 400px;
+}
+
+.item-gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containStyle .item-gallery img {
+  object-fit: scale-down;
+}
+
+.footer {
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;    
+    height: 100px;
+    color: #000000;
+    background-color: #b0b0b0;
+}
+  
+.github {
+  text-decoration: none;
+  color: inherit;
+}  
+   
+.footer-copyright {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-left: 3%;    
+}
+  
+.footer-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding-right: 3%;    
+}
+
+.footer-link a {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.footer-link a:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+  
+.rss {
+  width: 121px;
+  height: 45px;    
+}
