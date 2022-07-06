@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image gallery</title>    
+    <link rel="icon" href="./assets/logo/icons8-gallery-64.png">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <a class="pexels" href="https://www.pexels.com">
+                <img class="logo" src="https://images.pexels.com/lib/api/pexels-white.png" alt="Logo and link pexels">
+            </a>
+        </div>
+        <div class="search">      
+            <div class="search-field">                
+                <input class="search-input" id="search" type="search" name="search-photo" autofocus autocomplete="off" autocapitalize="none" placeholder="Поиск изображений" required="required" autofocus>
+                <input type="checkbox" id="check-box">
+                <label class="checkbox-label" for="check-box">сохранять пропорции</label>
+                <button class="search-clear search-it"></button>                
+            </div>
+            <div class="btns-pages">
+                <button class="btn-page prev-page"></button>
+                <button class="btn-page next-page"></button>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="api-class">
+            <a href="https://www.pexels.com">Photos provided by Pexels</a>
+        </div>
+        <div class="gallery-container">
+            <div class="item-gallery" id="0"></div>
+            <div class="item-gallery" id="1"></div>
+            <div class="item-gallery" id="2"></div>
+            <div class="item-gallery" id="3"></div>
+            <div class="item-gallery" id="4"></div>
+            <div class="item-gallery" id="5"></div>
+            <div class="item-gallery" id="6"></div>
+            <div class="item-gallery" id="7"></div>
+            <div class="item-gallery" id="8"></div>
+            <div class="item-gallery" id="9"></div>
+            <div class="item-gallery" id="10"></div>
+            <div class="item-gallery" id="11"></div>
+        </div>
+    </main>
+    <footer class="footer">
+        
+        <div class="footer-copyright">            
+            <span class="copyright">&#169;&#160;&#160;2022</span><span>Korsikov Aleksandr</span>
+        </div>
+        <div class="footer-link">
+            <a href="https://github.com/Akorsikov/">
+                <img src="./assets/logo/GitHub-Mark-64px.png" alt="link to my profile at Github" width="50" height="50">
+            </a>                    
+            <a href="https://www.facebook.com/profile.php?id=100029339467529">
+                <img src="./assets/logo/Fasebook256.png" alt="link to my profile at Facebook" width="50" height="50">
+            </a>
+            <div class="rss">                        
+                <a href="https://rs.school/js/">
+                    <img src="./assets/logo/rsschool.svg" alt="link to RSSchool">
+                </a>
+            </div>
+        </div>        
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
